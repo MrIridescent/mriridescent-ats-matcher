@@ -1,5 +1,5 @@
 # MrIridescent ATS Resume Matcher
-## [MANIFESTO OF CAPABILITY](./LEONARDO_MANIFESTO.md) | [INFOGRAPHIC](./INFOGRAPHIC.html) | [TECHNICAL MANUAL](./TECHNICAL_MANUAL.md)
+## [MANIFESTO OF CAPABILITY](./COVERLETTER_MANIFESTO.md) | [INFOGRAPHIC](./INFOGRAPHIC.html) | [TECHNICAL MANUAL](./TECHNICAL_MANUAL.md)
 
 ### Developed by **David Akpoviroro Oke** (*MrIridescent*)
 #### #DigitalPolymath #CreativeRenaissance #CybersecurityExpert #CodeSince2004

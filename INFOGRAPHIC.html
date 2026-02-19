@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MrIridescent ATS Architectural Infographic</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --primary: #38bdf8;
+            --secondary: #818cf8;
+            --accent: #f472b6;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        .architecture-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .layer {
+            background: var(--card-bg);
+            border: 1px solid #334155;
+            border-radius: 1rem;
+            padding: 2rem;
+            position: relative;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .layer:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        .layer h2 {
+            font-size: 1.25rem;
+            margin-top: 0;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .layer p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: var(--text-muted);
+        }
+
+        .component-list {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0 0 0;
+        }
+
+        .component-list li {
+            padding: 0.75rem;
+            background: #334155;
+            border-radius: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.85rem;
+            border-left: 3px solid var(--secondary);
+        }
+
+        .component-list li strong {
+            color: var(--text);
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .arrow {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--primary);
+            margin: 1rem 0;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            background: #0ea5e9;
+            color: white;
+            border-radius: 0.25rem;
+            font-size: 0.7rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        .footer {
+            margin-top: 4rem;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 20px; }
+            h1 { font-size: 1.75rem; }
+        }
+    </style>
+</head>
+<body>
+    <h1>MrIridescent ATS Architecture</h1>
+    <p class="subtitle">Multi-Agent Forensic Intelligence Ecosystem (Production-Ready)</p>
+
+    <div class="architecture-grid">
+        <!-- Layer 1: Frontend -->
+        <div class="layer">
+            <span class="tag">UI/UX Layer</span>
+            <h2>🖥️ Vanilla JS Frontend</h2>
+            <p>A high-performance, dark-themed interface built for rapid recruitment workflows.</p>
+            <ul class="component-list">
+                <li>
+                    <strong>Modular JS Components</strong>
+                    Asynchronous UI updates using Fetch API & localized state management.
+                </li>
+                <li>
+                    <strong>Dynamic Visual Analytics</strong>
+                    Chart.js integration for real-time candidate distribution mapping.
+                </li>
+                <li>
+                    <strong>Session Persistence</strong>
+                    Cookie-based authentication with secure local storage sync.
+                </li>
+            </ul>
+        </div>
+
+        <!-- Layer 2: API Gateway -->
+        <div class="layer">
+            <span class="tag">Gateway Layer</span>
+            <h2>⚡ FastAPI Backend</h2>
+            <p>The asynchronous heart of the system, managing routes and state.</p>
+            <ul class="component-list">
+                <li>
+                    <strong>RESTful Endpoints</strong>
+                    Full CRUD for JDs, Resumes, History, and User management.
+                </li>
+                <li>
+                    <strong>Middleware Security</strong>
+                    CORS handling, Session validation, and Error interception.
+                </li>
+                <li>
+                    <strong>SQLAlchemy ORM</strong>
+                    Database-agnostic layer (PostgreSQL/SQLite) with migration support.
+                </li>
+            </ul>
+        </div>
+
+        <!-- Layer 3: Intelligence -->
+        <div class="layer">
+            <span class="tag">AI Intelligence Layer</span>
+            <h2>🧠 CrewAI & spaCy</h2>
+            <p>The "Brains" of the system. We move beyond simple keywords to semantic intent.</p>
+            <ul class="component-list">
+                <li>
+                    <strong>Agent Swarm (CrewAI)</strong>
+                    Analyzer, Forensicist, and Auditor agents collaborating on validation.
+                </li>
+                <li>
+                    <strong>Semantic Vector Engine</strong>
+                    spaCy 'en_core_web_md' providing 300-dimensional word embeddings.
+                </li>
+                <li>
+                    <strong>Multi-Backend Support</strong>
+                    Seamless routing between Ollama (Local), Groq (Fast), and Perplexity (Research).
+                </li>
+            </ul>
+        </div>
+
+        <!-- Layer 4: Forensic Engine -->
+        <div class="layer">
+            <span class="tag">Forensic Layer</span>
+            <h2>🔍 Forensic Matching Engine</h2>
+            <p>Strict logic gates that verify professional claims against raw text evidence.</p>
+            <ul class="component-list">
+                <li>
+                    <strong>Role-Tech Mapping</strong>
+                    Verifies technology usage within specific professional time-frames.
+                </li>
+                <li>
+                    <strong>Extraction Validation</strong>
+                    Auditor Agent cross-checks structured JSON against raw text substrings.
+                </li>
+                <li>
+                    <strong>Hallucination Defense</strong>
+                    Proprietary logic to filter out "Optimized" but unverified resume text.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 David Akpoviroro Oke (MrIridescent). Built for the Creative Renaissance.</p>
+        <p>#DigitalPolymath #SystemsArchitect #PurpleTeamer</p>
+    </div>
+</body>
+</html>

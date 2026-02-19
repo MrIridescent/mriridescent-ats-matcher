@@ -5,9 +5,6 @@
 
 ---
 
-> *"Most Illustrious Lord, Having now sufficiently seen and considered the proofs of all those who count themselves masters and inventors of instruments of war... I shall endeavor, without prejudice to any one else, to explain myself to your Excellency, showing your Lordship my secrets..."*
-> — **Leonardo da Vinci, 1482**
-
 ### THE INVOCATION
 
 I have, most Illustrious Reader, duly considered the experiments of all those who are reputed masters and inventors in the digital arts. I have seen that their systems are often brittle, their security performative, and their creative vision narrow. They build for the "demo," while I build for the **Renaissance**.

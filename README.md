@@ -9,7 +9,7 @@
 ## 🚀 THE TURNKEY SOLUTION
 This is not a demo. This is **Production-Ready, Fully Functional Logic**. No mocks. No stubs. No placeholders.
 
-### 🌟 10X PERFORMANCE & INTELLIGENCE
+### 🌟 PERFORMANCE & INTELLIGENCE
 The MrIridescent ATS Matcher has been evolved into a high-precision recruitment weapon:
 - **Semantic Vector Matching**: Utilizing spaCy `en_core_web_md` for conceptual alignment between JDs and Resumes.
 - **Multi-Agent Orchestration**: Powered by **CrewAI**, featuring specialized agents for Analysis, Scoring, and Verification.
